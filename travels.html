@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambassador Travels</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* First Navigation Bar */
+        .navbar1 {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar1 a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Second Navigation Bar */
+        .navbar2 {
+            background-color: #f2f2f2;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .search-bar {
+            padding: 5px;
+        }
+
+        /* Body Section */
+        .content {
+            padding: 20px;
+        }
+
+       
+
+        /* Cards */
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        /* Card */
+        .card {
+            width: 23%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-right: 10px;
+            margin-left: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Hover Effect */
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Image */
+        .card img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+        }
+
+        /* Card Content */
+        .card-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Hover Effect on Image */
+        .card:hover img {
+            opacity: 1;
+        }
+ /* Form Container */
+ .form-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 20px;
+        }
+
+        /* Form styles */
+        .safari-form {
+            width: 60%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Form field styles */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        /* Right Side Paragraph */
+        .right-paragraph {
+            width: 35%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .social-icons li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .social-icons a {
+            color: white;
+            text-decoration: none;
+        }
+ 
+    </style>
+</head>
+<body>
+    <!-- First Navigation Bar -->
+    <div class="navbar1">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Our Services</a>
+    </div>
+
+    <!-- Second Navigation Bar -->
+    <div class="navbar2">
+        <div class="logo">Ambassador Travels</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <!-- Body Section -->
+    <div class="content">
+        <div class="image">
+            <img src="  https://th.bing.com/th/id/R.e75350374dffe541bb66fd29ec070846?rik=E4KcvDfZ5uDUcA&pid=ImgRaw&r=0" alt="Image" height="200px" width="100%">
+        </div>
+        <p>Ambassador Travels is a tour and Travel company with its headquater in Nairobi Kenya.
+             It has other branches in major cities of the entire region of Eastern Africa, Arusha
+              in Tanzania and Kampala in Uganda. For the last ten years, Ambassador Travels has 
+              organized a wide range of Safaris in the eastern part of Africa. It is our obligation 
+              to making sure you explore and enjoy African wilderness to the fullest through our amazing
+               safari packages during your holidays. Our Safari packages ranges from Mountain Hiking, 
+               Game Drives at the major National Parks such as Tsavo West and East, Maasai Mara, Samburu, 
+               Tarangire, Amboseli, to Gorillas tracking and bird watching. Kenya and Tanzania being at 
+               the edges of the great Indian ocean we will also create some good time and take you to 
+               coastal cities like Mombasa and Zanzibar located in Kenya and Tanzania respectively. 
+               Our specialized safari programs focus on these East Africa countries; Kenya, Uganda and 
+               Tanzania We hereby invite you to visit Africa; to spend your holiday in the warm cool 
+               white-sand beaches and African jungle, where there are all sorts of wild animals ranging
+                from the big cats, giant elephants to the apes. Africa is also your home! Welcome.</p>
+        
+        
+            <div class="card-container">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h2>Kenyan Tour Package</h2>
+                            <p>Duration-10 Days
+
+                            From $4200
+                                
+                         Kenya is the perfect destination for a classic bush-and-beach holiday. You’ll spend a couple
+                         of days exploring the world-renowned Masai Mara National Park. The open savannah is perfect 
+                         for quality sightings of Lions and Cheetahs. If you’re lucky you might even see a hunt. You’ll
+                          only need a short stay in the beautiful Lake Nakuru National Park to see Rhinos and a variety
+                           of other wildlife. To round off the safari, you’ll visit Amboseli Natioal Park for inspiring 
+                           close-ups with Elephants and views of Kilimanjaro, Africa’s tallest mountain. Time permitting,
+                            you can add on a few days in Tsavo (East and West) for a true wilderness experience and a chance 
+                            to see unusual Antelopes, such as Gerenuk and Fringe-eared oryx. Finally you’ll head to the Kenyan 
+                            coast to spend a few days relaxing at one of Kenya’s idyllic sand beaches – the perfect way to end
+                             a holiday.</p>
+                    </div>
+                 </div>
+            
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h2>Tanzania Tour Package</h2>
+                            <p>Duration-10 Days
+
+                                From $4500
+                                
+                          Tanzania offers the perfect safari-and-beach combo. Most popular is a safari in Tanzania’s
+                          Northern circuit, followed by a tropical Zanzibar beach holiday. The island is known for its
+                          white sandy beaches, crystal-clear turquoise waters, and Stone Town, the historic part of Zanzibar
+                          city. There’s plenty to do in Zanzibar; swimming with dolphins and a spice tour into the island’s 
+                          rural interior are recommended day trips. Alternatively, for a quick safari add-on to a Zanzibar tour,
+                          Nyerere (Selous) National Park is a great option. Here you can pack a lot into a short stay. Activities
+                          include game drives, walking safaris and boat cruises on the mighty Rufiji River.
+                          Tanzania travels offer a mesmerizing blend of breathtaking wildlife safaris, stunning landscapes,
+                           and vibrant cultures, making it an unforgettable destination for adventurous explorers.</p>
+                        </div>
+                    </div>
+            
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h2>Kenya-Tanzania Tour Package</h2>
+                            <p>Duration-15 Days
+
+                        From $7000
+                        
+                        Kenya and Tanzania are the most popular safari destinations for travellers looking for an unforgettable
+                         experience in East Africa.Each country offers a unique attarction, ranging from the vast savvanah of kenya,
+                         the majestic mount Kilimanjaro in Tanzania and the pristine beutiful beaches of zanzibar. Kenya is a 
+                         wildlife lover paradise, home to variety of wildlife species including the big five.At the same time
+                         tanzania is known for its safaris and the amazing Mount Kilimanjaro trek
+                         With so much to see and experience in these destinations travellers can chose from a range of packages
+                          where they will visit varios places within the two countries within 15 days.</p>
+                        </div>
+                    </div>
+            
+                    <!-- Card 4 -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h2>5 Days Maasai Mara Special Package</h2>
+                            <p>From$2900
+
+                        Embark on an unforgettable Maasai Mara Safari package and immerse yourself in the breathtaking beauty
+                         of Kenya's most renowned wildlife reserve. This captivating adventure spans over vast savannahs and 
+                         dense woodlands, offering a once-in-a-lifetime opportunity to witness the Great Migration, where millions
+                          of wildebeest, zebras, and other herbivores traverse the perilous terrain in search of greener pastures.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-container">
+                    <!-- Safari Form -->
+                    <form class="safari-form">
+                        <h2>Book Your Safari</h2>
+            
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="country">Country of Origin</label>
+                            <input type="text" id="country" name="country" required>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="budget">Safari Budget</label>
+                            <input type="text" id="budget" name="budget" required>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="package">Preferred Package</label>
+                            <select id="package" name="package" required>
+                                <option value="">Select a package</option>
+                                <option value="Package 1">Kenyan Tours</option>
+                                <option value="Package 2">Tanzanian Tours</option>
+                                <option value="Package 3">Kenya-Tanzania Combined Tours</option>
+                                <option value="Package 4">5 Days Maasai Mara Tour</option>
+                                <option value="Package 5">A Customized Tour</option>
+                            </select>
+                        </div>
+            
+                        <button type="submit">Submit</button>
+                    </form>
+            
+                    <!-- Right Side Paragraph -->
+                    <div class="right-paragraph">
+                        <h3>Experience the Adventure of a Lifetime!We offer a wide variety of packages for you to choose from, depending on your dream destination!</h3>
+                        
+                        <h4>Book your safari today and explore the breathtaking landscapes and wildlife of Africa. Our expert guides will take you on an unforgettable journey through the heart of nature. Don't miss out on this amazing opportunity.</h4>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaxT1qFS2mB2zrbkBAK60kwDTg45xxnLts_Q&usqp=CAU" alt="Safari bookings" height="300px" width="350px" position="center">
+                    </div>
+                </div>
+              
+    <!-- Footer -->
+    <div class="footer">
+        Giving you the best Travel experience<br><br>
+        <ul class="social-icons">
+            <li><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Kiro5rs_bru2NIEbGuK_BAI8YVDLjXTmKQ&usqp=CAU" alt="Facebook" height="40px"></a></li>
+            <li><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnBJmoreqtr3eFlaHtdzLWufM5JmH1xwkvWw&usqp=CAU" alt="Twitter" height="40px"></a></li>
+            <li><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzZkMPYNMKNgwDH3DM0nnv1t4-AIrFD8-qLg&usqp=CAU" alt="Instagram" height="40px"></a></li>
+            <li><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAkM4XtVrtzz44TdtByTMMxs-kQVK7KIxS1Q&usqp=CAU" alt="WhatsApp" height="40px"></a></li>
+        </ul>
+       <br> <br>2023&copy; copyrights reserved 
+    </div>
+   
+</body>
+</html>
+
+
